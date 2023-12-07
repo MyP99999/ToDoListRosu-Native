@@ -121,7 +121,8 @@ const TodosScreen = () => {
                             <Text>{todo.name} - ({todo.type})</Text>
                             <Text>Pana la:{todo.time}</Text>
                             <View style={styles.todoButtons}>
-                                <TouchableOpacity onPress={() => navigation.navigate('EditTodo', { id: todo.id })} style={styles.editButton}>
+                                <TouchableOpacity onPress={() => navigation.navigate('EditTodo', { todoId: todo.id })
+                                } style={styles.editButton}>
                                     <Text>Modifica</Text>
                                 </TouchableOpacity>
 
@@ -139,7 +140,7 @@ const TodosScreen = () => {
                     </TouchableOpacity>
                 </View>
             </ScrollView>
-        </SafeAreaView>
+        </SafeAreaView >
 
     );
 }
