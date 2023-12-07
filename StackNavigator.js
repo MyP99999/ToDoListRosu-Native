@@ -11,7 +11,6 @@ const StackNavigator = () => {
     return (
         <Stack.Navigator
             screenOptions={{
-                headerShown: false,
                 cardStyleInterpolator: ({ current }) => {
                     return {
                         cardStyle: {
