@@ -51,7 +51,7 @@ export const TodosProvider = ({ children }) => {
         const saveTodos = async () => {
             await AsyncStorage.setItem('todos', JSON.stringify(todos));
         };
-
+        console.log(todos)
         saveTodos();
     }, [todos]);
 

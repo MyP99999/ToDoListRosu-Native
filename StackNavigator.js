@@ -22,7 +22,7 @@ const StackNavigator = () => {
         >
             <>
                 <Stack.Group>
-                    <Stack.Screen name="Todo" component={TodosScreen} />
+                    <Stack.Screen name="Todos" component={TodosScreen} />
                     <Stack.Screen name="AddTodo" component={AddTodoScreen} />
                     <Stack.Screen name="EditTodo" component={EditTodoScreen} />
                 </Stack.Group>
